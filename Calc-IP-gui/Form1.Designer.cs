@@ -62,7 +62,7 @@ partial class Form1
         label1.BackColor = System.Drawing.Color.Wheat;
         label1.Font = new System.Drawing.Font("Consolas", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
         label1.ForeColor = System.Drawing.Color.Crimson;
-        label1.Location = new System.Drawing.Point(366, 6);
+        label1.Location = new System.Drawing.Point(334, 15);
         label1.Name = "label1";
         label1.Size = new System.Drawing.Size(404, 83);
         label1.TabIndex = 0;
@@ -184,8 +184,9 @@ partial class Form1
         // 
         // label11
         // 
+        label11.BackColor = System.Drawing.Color.MintCream;
         label11.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
-        label11.Location = new System.Drawing.Point(168, 163);
+        label11.Location = new System.Drawing.Point(167, 163);
         label11.Name = "label11";
         label11.Size = new System.Drawing.Size(160, 45);
         label11.TabIndex = 12;
@@ -194,8 +195,9 @@ partial class Form1
         // 
         // label12
         // 
+        label12.BackColor = System.Drawing.Color.MintCream;
         label12.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
-        label12.Location = new System.Drawing.Point(168, 209);
+        label12.Location = new System.Drawing.Point(167, 209);
         label12.Name = "label12";
         label12.Size = new System.Drawing.Size(160, 45);
         label12.TabIndex = 13;
@@ -204,8 +206,9 @@ partial class Form1
         // 
         // label13
         // 
+        label13.BackColor = System.Drawing.Color.MintCream;
         label13.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
-        label13.Location = new System.Drawing.Point(168, 255);
+        label13.Location = new System.Drawing.Point(167, 255);
         label13.Name = "label13";
         label13.Size = new System.Drawing.Size(160, 45);
         label13.TabIndex = 14;
@@ -214,8 +217,9 @@ partial class Form1
         // 
         // label14
         // 
+        label14.BackColor = System.Drawing.Color.MintCream;
         label14.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
-        label14.Location = new System.Drawing.Point(168, 301);
+        label14.Location = new System.Drawing.Point(167, 301);
         label14.Name = "label14";
         label14.Size = new System.Drawing.Size(160, 45);
         label14.TabIndex = 15;
@@ -224,8 +228,9 @@ partial class Form1
         // 
         // label15
         // 
+        label15.BackColor = System.Drawing.Color.MintCream;
         label15.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
-        label15.Location = new System.Drawing.Point(168, 347);
+        label15.Location = new System.Drawing.Point(167, 347);
         label15.Name = "label15";
         label15.Size = new System.Drawing.Size(160, 45);
         label15.TabIndex = 16;
@@ -234,8 +239,9 @@ partial class Form1
         // 
         // label16
         // 
+        label16.BackColor = System.Drawing.Color.MintCream;
         label16.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
-        label16.Location = new System.Drawing.Point(168, 393);
+        label16.Location = new System.Drawing.Point(167, 393);
         label16.Name = "label16";
         label16.Size = new System.Drawing.Size(160, 45);
         label16.TabIndex = 17;
@@ -244,8 +250,9 @@ partial class Form1
         // 
         // label17
         // 
+        label17.BackColor = System.Drawing.Color.MintCream;
         label17.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
-        label17.Location = new System.Drawing.Point(168, 439);
+        label17.Location = new System.Drawing.Point(167, 439);
         label17.Name = "label17";
         label17.Size = new System.Drawing.Size(160, 45);
         label17.TabIndex = 18;
@@ -254,8 +261,9 @@ partial class Form1
         // 
         // label18
         // 
+        label18.BackColor = System.Drawing.Color.MintCream;
         label18.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
-        label18.Location = new System.Drawing.Point(334, 163);
+        label18.Location = new System.Drawing.Point(329, 163);
         label18.Name = "label18";
         label18.Size = new System.Drawing.Size(370, 45);
         label18.TabIndex = 19;
@@ -264,8 +272,9 @@ partial class Form1
         // 
         // label19
         // 
+        label19.BackColor = System.Drawing.Color.MintCream;
         label19.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
-        label19.Location = new System.Drawing.Point(334, 209);
+        label19.Location = new System.Drawing.Point(329, 209);
         label19.Name = "label19";
         label19.Size = new System.Drawing.Size(370, 45);
         label19.TabIndex = 20;
@@ -274,8 +283,9 @@ partial class Form1
         // 
         // label20
         // 
+        label20.BackColor = System.Drawing.Color.MintCream;
         label20.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
-        label20.Location = new System.Drawing.Point(334, 255);
+        label20.Location = new System.Drawing.Point(329, 255);
         label20.Name = "label20";
         label20.Size = new System.Drawing.Size(370, 45);
         label20.TabIndex = 21;
@@ -284,8 +294,9 @@ partial class Form1
         // 
         // label21
         // 
+        label21.BackColor = System.Drawing.Color.MintCream;
         label21.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
-        label21.Location = new System.Drawing.Point(334, 301);
+        label21.Location = new System.Drawing.Point(329, 301);
         label21.Name = "label21";
         label21.Size = new System.Drawing.Size(370, 45);
         label21.TabIndex = 22;
@@ -294,8 +305,9 @@ partial class Form1
         // 
         // label22
         // 
+        label22.BackColor = System.Drawing.Color.MintCream;
         label22.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
-        label22.Location = new System.Drawing.Point(334, 347);
+        label22.Location = new System.Drawing.Point(329, 347);
         label22.Name = "label22";
         label22.Size = new System.Drawing.Size(370, 45);
         label22.TabIndex = 23;
@@ -304,8 +316,9 @@ partial class Form1
         // 
         // label23
         // 
+        label23.BackColor = System.Drawing.Color.MintCream;
         label23.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
-        label23.Location = new System.Drawing.Point(334, 393);
+        label23.Location = new System.Drawing.Point(329, 393);
         label23.Name = "label23";
         label23.Size = new System.Drawing.Size(370, 45);
         label23.TabIndex = 24;
@@ -314,8 +327,9 @@ partial class Form1
         // 
         // label24
         // 
+        label24.BackColor = System.Drawing.Color.MintCream;
         label24.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
-        label24.Location = new System.Drawing.Point(334, 438);
+        label24.Location = new System.Drawing.Point(329, 439);
         label24.Name = "label24";
         label24.Size = new System.Drawing.Size(370, 45);
         label24.TabIndex = 25;
