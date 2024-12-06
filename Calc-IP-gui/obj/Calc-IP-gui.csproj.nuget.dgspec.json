@@ -1,32 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kielu\\RiderProjects\\Calc-IP-gui\\Calc-IP-gui\\Calc-IP-gui.csproj": {}
+    "C:\\Users\\kielu\\RiderProjects\\ip_calc_gui\\Calc-IP-gui\\Calc-IP-gui.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kielu\\RiderProjects\\Calc-IP-gui\\Calc-IP-gui\\Calc-IP-gui.csproj": {
+    "C:\\Users\\kielu\\RiderProjects\\ip_calc_gui\\Calc-IP-gui\\Calc-IP-gui.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kielu\\RiderProjects\\Calc-IP-gui\\Calc-IP-gui\\Calc-IP-gui.csproj",
+        "projectUniqueName": "C:\\Users\\kielu\\RiderProjects\\ip_calc_gui\\Calc-IP-gui\\Calc-IP-gui.csproj",
         "projectName": "Calc-IP-gui",
-        "projectPath": "C:\\Users\\kielu\\RiderProjects\\Calc-IP-gui\\Calc-IP-gui\\Calc-IP-gui.csproj",
+        "projectPath": "C:\\Users\\kielu\\RiderProjects\\ip_calc_gui\\Calc-IP-gui\\Calc-IP-gui.csproj",
         "packagesPath": "C:\\Users\\kielu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kielu\\RiderProjects\\Calc-IP-gui\\Calc-IP-gui\\obj\\",
+        "outputPath": "C:\\Users\\kielu\\RiderProjects\\ip_calc_gui\\Calc-IP-gui\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kielu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\kielu\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
