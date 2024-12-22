@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Calc-IP-gui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd57988e63b5815be22cedeb9de322c340825dde")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91bc15a1cdaca63ee6f78795ef1c570cbfda674b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Calc-IP-gui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Calc-IP-gui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
