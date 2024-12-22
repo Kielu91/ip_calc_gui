@@ -16,18 +16,37 @@ public partial class Form1 : Form
             string ipInput = tb_ip.Text.Trim();
             string maskInput = tb_mask.Text.Trim();
             
-            IPAddress ipAddress = IPAddress.Parse(ipInput);
-            IPAddress subnetMask = IPAddress.Parse(maskInput);
+            string[] splitIp = ipInput.Split('.');
+            string[] splitMask = maskInput.Split('.');
             
-            IPAddress networkAddress = GetNetworkAddress(ipAddress, subnetMask);
-            IPAddress broadcastAddress = GetBroadcastAddress(ipAddress, subnetMask);
-            int totalHosts = GetTotalHosts(subnetMask);
+            //walidacja
+            if (!CheckIPparts(splitIp))
+            {
+                MessageBox.Show("Adres IP jest niepoprawny. Upewnij się, że jest w formacie X.X.X.X, gdzie X to liczba 0–255.", "Błąd");
+                return;
+            }
+            if (!CheckIPparts(splitMask))
+            {
+                MessageBox.Show("Maska podsieci jest niepoprawna. Upewnij się, że jest w formacie X.X.X.X, gdzie X to liczba 0–255.", "Błąd");
+                return;
+            }
+            //string[] na int[]
+            int[] intIp = ConvertToInt(splitIp);
+            int[] intMask = ConvertToInt(splitMask);
+            //reprezentacja binarna w postaci string[]
+            string[] binIp = ConvertToBin(intIp);
+            string[] binMask = ConvertToBin(intMask);
+            
+            
+            
 
             ip_dec.Text = ipInput;
+            ip_bin.Text = string.Join("",binIp);
+            
             mask_dec.Text = maskInput;
-            adres_dec.Text = $"{networkAddress}";
-            adresR_dec.Text = $"{broadcastAddress}";
-            host_dec.Text = $"{totalHosts}";
+            
+            
+            
         }
         catch (Exception ex)
         {
@@ -35,55 +54,116 @@ public partial class Form1 : Form
         } 
         
     }
-    private IPAddress GetNetworkAddress(IPAddress ipAddress, IPAddress subnetMask)
+
+    private bool CheckIPparts(string[] parts)
     {
-        byte[] ipBytes = ipAddress.GetAddressBytes();
-        byte[] maskBytes = subnetMask.GetAddressBytes();
-        byte[] networkBytes = new byte[ipBytes.Length];
-
-        for (int i = 0; i < ipBytes.Length; i++)
+        //czy 4 oktety?
+        if (parts.Length != 4)
         {
-            networkBytes[i] = (byte)(ipBytes[i] & maskBytes[i]);
+            return false;
         }
-
-        return new IPAddress(networkBytes);
+        //znaki 0-9? zakres 0-255?
+        foreach (string part in parts)
+        {
+            if (!CheckValid(part))
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
-    private IPAddress GetBroadcastAddress(IPAddress ipAddress, IPAddress subnetMask)
+    private bool CheckValid(string input)
     {
-        byte[] ipBytes = ipAddress.GetAddressBytes();
-        byte[] maskBytes = subnetMask.GetAddressBytes();
-        byte[] broadcastBytes = new byte[ipBytes.Length];
-
-        for (int i = 0; i < ipBytes.Length; i++)
+        //czy cyfry?
+        foreach (char c in input)
         {
-            broadcastBytes[i] = (byte)(ipBytes[i] | ~maskBytes[i]);
+            if (!char.IsDigit(c))
+            {
+                return false;
+            }
         }
-
-        return new IPAddress(broadcastBytes);
+        //czy 0-255?
+        if (int.TryParse(input, out int value))
+        {
+            return value >= 0 && value <= 255;
+        }
+        return false;//jesli blad
     }
-
-    private int GetTotalHosts(IPAddress subnetMask)
+//konwersja tablicy string na int
+    private int[] ConvertToInt(string[] input)
     {
-        byte[] maskBytes = subnetMask.GetAddressBytes();
-        int totalBits = 0;
-
-        foreach (byte b in maskBytes)
+        int[] output = new int[input.Length];
+        for (int i = 0; i < input.Length; i++)
         {
-            totalBits += CountBits(b);
+            output[i] = int.Parse(input[i]);
         }
-
-        return (int)Math.Pow(2, 32 - totalBits) - 2; // -2 dla adresu sieci i broadcast
+        return output;
     }
-
-    private int CountBits(byte b)
+//tablica int na tablice string reprezentujaca jako dpostac binarna
+    private string[] ConvertToBin(int[] input)
     {
-        int count = 0;
-        while (b != 0)
+        string[] output = new string[input.Length];
+
+        for (int i = 0; i < input.Length; i++)
         {
-            count += b & 1;
-            b >>= 1;
+            output[i] = DecToBin(input[i]);
         }
-        return count;
+        return output;
     }
+//konwersja int na bin zapisane jako string
+    private string DecToBin(int input)
+    {
+        if (input == 0 ) return "0";
+        
+        string output = null;
+
+        while (input > 0)
+        {
+            int remainder = input % 2;
+            output = remainder + output;
+            input = input / 2;
+        }
+        return output;
+    } 
+//walidacja ciaglosci maski
+    
+    
+
+//klasa sieci 
+
+
+
+//network address
+    
+    
+    
+    
+//broadcast address
+    
+    
+    
+    
+//bity net/host
+
+
+
+
+//ile hostow
+
+
+
+
+//host max
+
+
+
+//host min
+
+
+
+
+//separator czesci net/host
+    
+    
 }
