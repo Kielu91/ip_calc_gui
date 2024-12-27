@@ -101,7 +101,7 @@ partial class Form1
         label_mask_in.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
         label_mask_in.Size = new System.Drawing.Size(290, 35);
         label_mask_in.TabIndex = 2;
-        label_mask_in.Text = "Mask";
+        label_mask_in.Text = "Maska";
         label_mask_in.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
         // 
         // tb_ip
