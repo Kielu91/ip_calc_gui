@@ -405,15 +405,16 @@ partial class Form1
         klasa_label.Name = "klasa_label";
         klasa_label.Size = new System.Drawing.Size(67, 33);
         klasa_label.TabIndex = 31;
-        klasa_label.Text = "Klasa";
+        klasa_label.Text = "Klasa:";
         klasa_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // klasa_out
         // 
         klasa_out.BackColor = System.Drawing.Color.Firebrick;
-        klasa_out.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
+        klasa_out.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
         klasa_out.ForeColor = System.Drawing.Color.Yellow;
         klasa_out.Location = new System.Drawing.Point(87, 507);
+        klasa_out.Margin = new System.Windows.Forms.Padding(0);
         klasa_out.Name = "klasa_out";
         klasa_out.Size = new System.Drawing.Size(67, 33);
         klasa_out.TabIndex = 32;
