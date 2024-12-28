@@ -1,3 +1,6 @@
+using System;
+using System.Windows.Forms;
+
 namespace Calc_IP_gui;
 
 static class Program

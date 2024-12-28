@@ -1,4 +1,6 @@
+using System;
 using System.Net;
+using System.Windows.Forms;
 
 namespace Calc_IP_gui;
 
@@ -17,9 +19,23 @@ public partial class Form1 : Form
             string maskInput = tb_mask.Text.Trim();
             
             string[] splitIp = ipInput.Split('.');
-            string[] splitMask = maskInput.Split('.');
-            
+            string[] splitMask = new string[] { };
+
+            if (checkBox1.Checked == true)
+            {
+                if (!CheckValidShort(maskInput))
+                {
+                    MessageBox.Show("maska jest niepoprawna. Upewnij się, że jest w formacie XX, gdzie XX to liczba 0–32", "Błąd");
+                    return;
+                }
+                splitMask = ConvertIntToString(ConvertToDec(ShortMaskToBin(maskInput)));
+                maskInput = string.Join(".", ConvertToDec(ShortMaskToBin(maskInput)));
+            }
     //walidacja
+            if (checkBox1.Checked == false)
+            {
+                 splitMask = maskInput.Split('.');        
+            }
             if (!CheckIPparts(splitIp))
             {
                 MessageBox.Show("Adres IP jest niepoprawny. Upewnij się, że jest w formacie X.X.X.X, gdzie X to liczba 0–255.", "Błąd");
@@ -131,6 +147,24 @@ public partial class Form1 : Form
         if (int.TryParse(input, out int value))
         {
             return value >= 0 && value <= 255;
+        }
+        return false;//jesli blad
+    }
+    
+    private bool CheckValidShort(string input)
+    {
+        //czy cyfry?
+        foreach (char c in input)
+        {
+            if (!char.IsDigit(c))
+            {
+                return false;
+            }
+        }
+        //czy 0-255?
+        if (int.TryParse(input, out int value))
+        {
+            return value >= 0 && value <= 32;
         }
         return false;//jesli blad
     }
@@ -344,4 +378,41 @@ public partial class Form1 : Form
         return output;
     }
 
+    private string[] ShortMaskToBin(string number)
+    {
+        int num = Convert.ToInt32(number);
+        string[] output = new string[4];
+        int currentindex = 0;
+        for (int i = 0; i < 4; i++)
+        {
+            string octet = output[i];
+            string separatedOctet = string.Empty;
+            for (int j = 0; j < 8; j++, currentindex++)
+            {
+                if (currentindex < num)
+                {
+                    separatedOctet += "1";
+                }
+
+                if (currentindex >= num)
+                {
+                    separatedOctet += "0";
+                }
+
+            }
+            output[i] = separatedOctet;
+        }
+        return output;
+        
+    }
+
+    private string[] ConvertIntToString(int[] input)
+    {
+        string[] output = new string[input.Length];
+        for (int i = 0; i < input.Length; i++)
+        {
+            output[i] = Convert.ToString(input[i]);
+        }
+        return output;
+    }
 }

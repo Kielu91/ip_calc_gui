@@ -1,0 +1,17 @@
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\bin\Release\net9.0-windows\Calc-IP-gui.exe
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\bin\Release\net9.0-windows\Calc-IP-gui.deps.json
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\bin\Release\net9.0-windows\Calc-IP-gui.runtimeconfig.json
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\bin\Release\net9.0-windows\Calc-IP-gui.dll
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\bin\Release\net9.0-windows\Calc-IP-gui.pdb
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\obj\Release\net9.0-windows\Calc_IP_gui.Form1.resources
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\obj\Release\net9.0-windows\Calc-IP-gui.csproj.GenerateResource.cache
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\obj\Release\net9.0-windows\Calc-IP-gui.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\obj\Release\net9.0-windows\Calc-IP-gui.AssemblyInfoInputs.cache
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\obj\Release\net9.0-windows\Calc-IP-gui.AssemblyInfo.cs
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\obj\Release\net9.0-windows\Calc-IP-gui.csproj.CoreCompileInputs.cache
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\obj\Release\net9.0-windows\Calc-IP-gui.sourcelink.json
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\obj\Release\net9.0-windows\Calc-IP-gui.dll
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\obj\Release\net9.0-windows\refint\Calc-IP-gui.dll
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\obj\Release\net9.0-windows\Calc-IP-gui.pdb
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\obj\Release\net9.0-windows\Calc-IP-gui.genruntimeconfig.cache
+C:\Users\kielu\RiderProjects\gui-IPv4\Calc-IP-gui\obj\Release\net9.0-windows\ref\Calc-IP-gui.dll

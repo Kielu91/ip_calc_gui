@@ -63,6 +63,8 @@ partial class Form1
         shadowm = new System.Windows.Forms.Label();
         shadowip = new System.Windows.Forms.Label();
         shadow_title = new System.Windows.Forms.Label();
+        checkBox1 = new System.Windows.Forms.CheckBox();
+        label2 = new System.Windows.Forms.Label();
         SuspendLayout();
         // 
         // title_label
@@ -101,7 +103,7 @@ partial class Form1
         label_mask_in.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
         label_mask_in.Size = new System.Drawing.Size(290, 35);
         label_mask_in.TabIndex = 2;
-        label_mask_in.Text = "Mask";
+        label_mask_in.Text = "Maska";
         label_mask_in.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
         // 
         // tb_ip
@@ -455,11 +457,36 @@ partial class Form1
         shadow_title.Text = "IP Calculator";
         shadow_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
+        // checkBox1
+        // 
+        checkBox1.BackColor = System.Drawing.Color.LightSteelBlue;
+        checkBox1.ForeColor = System.Drawing.Color.Yellow;
+        checkBox1.Location = new System.Drawing.Point(311, 91);
+        checkBox1.Name = "checkBox1";
+        checkBox1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+        checkBox1.Size = new System.Drawing.Size(103, 35);
+        checkBox1.TabIndex = 36;
+        checkBox1.Text = "Skrócona";
+        checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        checkBox1.UseVisualStyleBackColor = false;
+        // 
+        // label2
+        // 
+        label2.BackColor = System.Drawing.Color.Black;
+        label2.ForeColor = System.Drawing.Color.Yellow;
+        label2.Location = new System.Drawing.Point(314, 94);
+        label2.Name = "label2";
+        label2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+        label2.Size = new System.Drawing.Size(103, 35);
+        label2.TabIndex = 37;
+        label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+        // 
         // Form1
         // 
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
         BackColor = System.Drawing.Color.Blue;
         ClientSize = new System.Drawing.Size(784, 561);
+        Controls.Add(checkBox1);
         Controls.Add(title_label);
         Controls.Add(shadow_title);
         Controls.Add(tb_mask);
@@ -494,6 +521,7 @@ partial class Form1
         Controls.Add(shadowm);
         Controls.Add(shadowip);
         Controls.Add(label1);
+        Controls.Add(label2);
         Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)238));
         ForeColor = System.Drawing.SystemColors.ControlText;
         FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -504,6 +532,8 @@ partial class Form1
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.CheckBox checkBox1;
 
     private System.Windows.Forms.Label shadow_title;
 
